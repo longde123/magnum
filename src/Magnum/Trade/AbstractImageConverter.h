@@ -33,8 +33,8 @@
 #include <Corrade/PluginManager/AbstractManagingPlugin.h>
 
 #include "Magnum/Magnum.h"
-#include "Magnum/visibility.h"
 #include "Magnum/Trade/Trade.h"
+#include "Magnum/Trade/visibility.h"
 
 #ifdef MAGNUM_BUILD_DEPRECATED
 #include "MagnumExternal/Optional/OptionalWrapper.h"
@@ -75,7 +75,7 @@ Plugin interface string is @cpp "cz.mosra.magnum.Trade.AbstractImageConverter/0.
     cause dangling function pointer call on array destruction if the plugin
     gets unloaded before the array is destroyed.
 */
-class MAGNUM_EXPORT AbstractImageConverter: public PluginManager::AbstractManagingPlugin<AbstractImageConverter> {
+class MAGNUM_TRADE_EXPORT AbstractImageConverter: public PluginManager::AbstractManagingPlugin<AbstractImageConverter> {
     CORRADE_PLUGIN_INTERFACE("cz.mosra.magnum.Trade.AbstractImageConverter/0.2.1")
 
     public:

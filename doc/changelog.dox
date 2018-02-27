@@ -74,6 +74,8 @@ See also:
 
 @subsection changelog-latest-buildsystem Build system
 
+-   The @ref Trade namespace is now a separate library, allowing to use core
+    Magnum functionality without @ref Corrade::PluginManager
 -   The @ref Audio::AnyImporter "AnyAudioImporter", @ref Trade::AnyImageConverter "AnyImageConverter",
     @ref Trade::AnyImageImporter "AnyImageImporter" and @ref Trade::AnySceneImporter "AnySceneImporter"
     plugins were moved from the plugins repository to the core Magnum

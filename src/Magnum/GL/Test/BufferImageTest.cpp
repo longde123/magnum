@@ -25,7 +25,7 @@
 
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/BufferImage.h"
+#include "Magnum/GL/BufferImage.h"
 
 namespace Magnum { namespace Test {
 

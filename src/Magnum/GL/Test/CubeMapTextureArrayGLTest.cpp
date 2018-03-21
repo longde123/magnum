@@ -25,19 +25,19 @@
 
 #include <Corrade/TestSuite/Compare/Container.h>
 
-#include "Magnum/BufferImage.h"
-#include "Magnum/CubeMapTextureArray.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Image.h"
-#include "Magnum/ImageFormat.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/TextureFormat.h"
+#include "Magnum/GL/BufferImage.h"
+#include "Magnum/GL/CubeMapTextureArray.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/ImageFormat.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/TextureFormat.h"
 #include "Magnum/Math/Color.h"
 #include "Magnum/Math/Range.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct CubeMapTextureArrayGLTest: OpenGLTester {
     explicit CubeMapTextureArrayGLTest();
@@ -1158,6 +1158,6 @@ void CubeMapTextureArrayGLTest::invalidateSubImage() {
     MAGNUM_VERIFY_NO_ERROR();
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::CubeMapTextureArrayGLTest)

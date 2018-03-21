@@ -27,24 +27,24 @@
 #include <Corrade/Utility/Resource.h>
 #include <Corrade/TestSuite/Compare/Container.h>
 
-#include "Magnum/AbstractShaderProgram.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Image.h"
-#include "Magnum/ImageView.h"
+#include "Magnum/GL/AbstractShaderProgram.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/ImageView.h"
 #ifndef MAGNUM_TARGET_GLES2
-#include "Magnum/ImageFormat.h"
+#include "Magnum/GL/ImageFormat.h"
 #endif
-#include "Magnum/PixelFormat.h"
-#include "Magnum/Shader.h"
-#include "Magnum/Texture.h"
-#include "Magnum/TextureFormat.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/Shader.h"
+#include "Magnum/GL/Texture.h"
+#include "Magnum/GL/TextureFormat.h"
+#include "Magnum/GL/OpenGLTester.h"
 #include "Magnum/Math/Matrix.h"
 #include "Magnum/Math/Vector4.h"
 #include "Magnum/Math/Color.h"
-#include "Magnum/OpenGLTester.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct AbstractShaderProgramGLTest: OpenGLTester {
     explicit AbstractShaderProgramGLTest();
@@ -722,6 +722,6 @@ void AbstractShaderProgramGLTest::compute() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::AbstractShaderProgramGLTest)

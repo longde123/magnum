@@ -23,12 +23,12 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/SampleQuery.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/SampleQuery.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct AbstractQueryGLTest: OpenGLTester {
     explicit AbstractQueryGLTest();
@@ -143,6 +143,6 @@ void AbstractQueryGLTest::label() {
     MAGNUM_VERIFY_NO_ERROR();
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::AbstractQueryGLTest)

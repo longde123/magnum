@@ -25,11 +25,11 @@
 
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/Image.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/PixelStorage.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/PixelStorage.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct PixelStorageTest: TestSuite::Tester {
     explicit PixelStorageTest();
@@ -357,6 +357,6 @@ void PixelStorageTest::dataOffsetSizeCompressed() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::PixelStorageTest)

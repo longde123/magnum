@@ -26,19 +26,19 @@
 #include <Corrade/Utility/Assert.h>
 #include <Corrade/Utility/Resource.h>
 
-#include "Magnum/AbstractShaderProgram.h"
-#include "Magnum/Buffer.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Framebuffer.h"
-#include "Magnum/Mesh.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/Renderbuffer.h"
-#include "Magnum/RenderbufferFormat.h"
-#include "Magnum/SampleQuery.h"
-#include "Magnum/Shader.h"
+#include "Magnum/GL/AbstractShaderProgram.h"
+#include "Magnum/GL/Buffer.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Framebuffer.h"
+#include "Magnum/GL/Mesh.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/Renderbuffer.h"
+#include "Magnum/GL/RenderbufferFormat.h"
+#include "Magnum/GL/SampleQuery.h"
+#include "Magnum/GL/Shader.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct SampleQueryGLTest: OpenGLTester {
     explicit SampleQueryGLTest();
@@ -265,6 +265,6 @@ void SampleQueryGLTest::conditionalRender() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::SampleQueryGLTest)

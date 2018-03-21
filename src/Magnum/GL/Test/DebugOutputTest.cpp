@@ -26,9 +26,9 @@
 #include <sstream>
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/DebugOutput.h"
+#include "Magnum/GL/DebugOutput.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct DebugOutputTest: TestSuite::Tester {
     explicit DebugOutputTest();
@@ -90,6 +90,6 @@ void DebugOutputTest::debugGroupSource() {
     CORRADE_COMPARE(o.str(), "DebugGroup::Source::ThirdParty DebugGroup::Source(0xdead)\n");
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::DebugOutputTest)

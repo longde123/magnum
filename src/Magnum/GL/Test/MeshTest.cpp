@@ -27,9 +27,9 @@
 #include <Corrade/TestSuite/Tester.h>
 #include <Corrade/Utility/Configuration.h>
 
-#include "Magnum/Mesh.h"
+#include "Magnum/GL/Mesh.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct MeshTest: TestSuite::Tester {
     explicit MeshTest();
@@ -98,6 +98,6 @@ void MeshTest::configurationIndexType() {
     CORRADE_COMPARE(c.value<Mesh::IndexType>("type"), Mesh::IndexType::UnsignedByte);
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::MeshTest)

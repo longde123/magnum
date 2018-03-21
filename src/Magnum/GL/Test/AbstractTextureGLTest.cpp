@@ -23,12 +23,12 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Texture.h"
-#include "Magnum/OpenGLTester.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Texture.h"
+#include "Magnum/GL/OpenGLTester.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct AbstractTextureGLTest: OpenGLTester {
     explicit AbstractTextureGLTest();
@@ -103,6 +103,6 @@ void AbstractTextureGLTest::label() {
     CORRADE_COMPARE(texture.label(), "MyTexture");
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::AbstractTextureGLTest)

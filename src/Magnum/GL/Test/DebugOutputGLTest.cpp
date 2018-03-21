@@ -25,12 +25,12 @@
 
 #include <sstream>
 
-#include "Magnum/Context.h"
-#include "Magnum/DebugOutput.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/OpenGLTester.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/DebugOutput.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/OpenGLTester.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct DebugOutputGLTest: OpenGLTester {
     explicit DebugOutputGLTest();
@@ -173,6 +173,6 @@ void DebugOutputGLTest::groupFallback() {
     MAGNUM_VERIFY_NO_ERROR();
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::DebugOutputGLTest)

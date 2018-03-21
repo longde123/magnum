@@ -25,10 +25,10 @@
 
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/ImageView.h"
-#include "Magnum/PixelFormat.h"
+#include "Magnum/GL/ImageView.h"
+#include "Magnum/GL/PixelFormat.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct ImageViewTest: TestSuite::Tester {
     explicit ImageViewTest();
@@ -117,6 +117,6 @@ void ImageViewTest::setDataCompressed() {
     CORRADE_COMPARE(a.data(), data2);
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::ImageViewTest)

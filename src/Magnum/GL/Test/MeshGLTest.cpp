@@ -23,25 +23,25 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/AbstractShaderProgram.h"
-#include "Magnum/Buffer.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Framebuffer.h"
-#include "Magnum/Image.h"
-#include "Magnum/Mesh.h"
-#include "Magnum/MeshView.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/Renderbuffer.h"
-#include "Magnum/RenderbufferFormat.h"
-#include "Magnum/Shader.h"
+#include "Magnum/GL/AbstractShaderProgram.h"
+#include "Magnum/GL/Buffer.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Framebuffer.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/Mesh.h"
+#include "Magnum/GL/MeshView.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/Renderbuffer.h"
+#include "Magnum/GL/RenderbufferFormat.h"
+#include "Magnum/GL/Shader.h"
 #include "Magnum/Math/Color.h"
 #include "Magnum/Math/Half.h"
 #include "Magnum/Math/Matrix.h"
 #include "Magnum/Math/Vector4.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 /* Tests also MeshView class. */
 
@@ -2287,6 +2287,6 @@ void MeshGLTest::multiDrawBaseVertex() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::MeshGLTest)

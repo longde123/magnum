@@ -23,24 +23,24 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/AbstractShaderProgram.h"
-#include "Magnum/Buffer.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Framebuffer.h"
-#include "Magnum/Image.h"
-#include "Magnum/Mesh.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/PrimitiveQuery.h"
-#include "Magnum/SampleQuery.h"
-#include "Magnum/Renderbuffer.h"
-#include "Magnum/RenderbufferFormat.h"
-#include "Magnum/Shader.h"
-#include "Magnum/TransformFeedback.h"
+#include "Magnum/GL/AbstractShaderProgram.h"
+#include "Magnum/GL/Buffer.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Framebuffer.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/Mesh.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/PrimitiveQuery.h"
+#include "Magnum/GL/SampleQuery.h"
+#include "Magnum/GL/Renderbuffer.h"
+#include "Magnum/GL/RenderbufferFormat.h"
+#include "Magnum/GL/Shader.h"
+#include "Magnum/GL/TransformFeedback.h"
 #include "Magnum/Math/Vector2.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct TransformFeedbackGLTest: OpenGLTester {
     explicit TransformFeedbackGLTest();
@@ -703,6 +703,6 @@ void TransformFeedbackGLTest::draw() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::TransformFeedbackGLTest)

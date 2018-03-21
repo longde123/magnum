@@ -25,15 +25,15 @@
 
 #include <Corrade/TestSuite/Compare/Container.h>
 
-#include "Magnum/Buffer.h"
-#include "Magnum/BufferTexture.h"
-#include "Magnum/BufferTextureFormat.h"
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/ImageFormat.h"
-#include "Magnum/OpenGLTester.h"
+#include "Magnum/GL/Buffer.h"
+#include "Magnum/GL/BufferTexture.h"
+#include "Magnum/GL/BufferTextureFormat.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/ImageFormat.h"
+#include "Magnum/GL/OpenGLTester.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct BufferTextureGLTest: OpenGLTester {
     explicit BufferTextureGLTest();
@@ -215,6 +215,6 @@ void BufferTextureGLTest::setBufferOffset() {
     MAGNUM_VERIFY_NO_ERROR();
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::BufferTextureGLTest)

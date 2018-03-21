@@ -26,9 +26,9 @@
 #include <sstream>
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/DefaultFramebuffer.h"
+#include "Magnum/GL/DefaultFramebuffer.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct DefaultFramebufferTest: TestSuite::Tester {
     explicit DefaultFramebufferTest();
@@ -47,6 +47,6 @@ void DefaultFramebufferTest::debugStatus() {
     CORRADE_COMPARE(out.str(), "DefaultFramebuffer::Status::Complete DefaultFramebuffer::Status(0xdead)\n");
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::DefaultFramebufferTest)

@@ -25,14 +25,14 @@
 
 #include <Corrade/Utility/Directory.h>
 
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Shader.h"
-#include "Magnum/OpenGLTester.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Shader.h"
+#include "Magnum/GL/OpenGLTester.h"
 
-#include "configure.h"
+#include "shaderGLTestConfigure.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct ShaderGLTest: OpenGLTester {
     explicit ShaderGLTest();
@@ -279,6 +279,6 @@ void ShaderGLTest::compileNoVersion() {
     CORRADE_VERIFY(shader.compile());
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::ShaderGLTest)

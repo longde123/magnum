@@ -23,22 +23,22 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/AbstractShaderProgram.h"
-#include "Magnum/Buffer.h"
-#include "Magnum/Context.h"
-#include "Magnum/CubeMapTexture.h"
-#include "Magnum/DefaultFramebuffer.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Framebuffer.h"
-#include "Magnum/Image.h"
-#include "Magnum/Mesh.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/Renderer.h"
-#include "Magnum/Renderbuffer.h"
-#include "Magnum/Shader.h"
-#include "Magnum/Texture.h"
-#include "Magnum/TextureFormat.h"
-#include "Magnum/Version.h"
+#include "Magnum/GL/AbstractShaderProgram.h"
+#include "Magnum/GL/Buffer.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/CubeMapTexture.h"
+#include "Magnum/GL/DefaultFramebuffer.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Framebuffer.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/Mesh.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/Renderer.h"
+#include "Magnum/GL/Renderbuffer.h"
+#include "Magnum/GL/Shader.h"
+#include "Magnum/GL/Texture.h"
+#include "Magnum/GL/TextureFormat.h"
+#include "Magnum/GL/Version.h"
 #include "Magnum/Math/Matrix4.h"
 #include "Magnum/MeshTools/Interleave.h"
 #include "Magnum/MeshTools/CompressIndices.h"
@@ -48,33 +48,33 @@
 #include "Magnum/Trade/MeshData3D.h"
 
 #if !(defined(MAGNUM_TARGET_GLES2) && defined(MAGNUM_TARGET_WEBGL))
-#include "Magnum/SampleQuery.h"
+#include "Magnum/GL/SampleQuery.h"
 #endif
 
 #ifndef MAGNUM_TARGET_WEBGL
-#include "Magnum/DebugOutput.h"
+#include "Magnum/GL/DebugOutput.h"
 #ifndef CORRADE_TARGET_ANDROID
-#include "Magnum/OpenGLTester.h"
+#include "Magnum/GL/OpenGLTester.h"
 #endif
-#include "Magnum/TimeQuery.h"
+#include "Magnum/GL/TimeQuery.h"
 #endif
 
 #ifndef MAGNUM_TARGET_GLES2
-#include "Magnum/BufferImage.h"
-#include "Magnum/PrimitiveQuery.h"
-#include "Magnum/TextureArray.h"
-#include "Magnum/TransformFeedback.h"
+#include "Magnum/GL/BufferImage.h"
+#include "Magnum/GL/PrimitiveQuery.h"
+#include "Magnum/GL/TextureArray.h"
+#include "Magnum/GL/TransformFeedback.h"
 #endif
 
 #if !defined(MAGNUM_TARGET_GLES2) && !defined(MAGNUM_TARGET_WEBGL)
-#include "Magnum/BufferTexture.h"
-#include "Magnum/BufferTextureFormat.h"
-#include "Magnum/CubeMapTextureArray.h"
-#include "Magnum/MultisampleTexture.h"
+#include "Magnum/GL/BufferTexture.h"
+#include "Magnum/GL/BufferTextureFormat.h"
+#include "Magnum/GL/CubeMapTextureArray.h"
+#include "Magnum/GL/MultisampleTexture.h"
 #endif
 
 #ifndef MAGNUM_TARGET_GLES
-#include "Magnum/RectangleTexture.h"
+#include "Magnum/GL/RectangleTexture.h"
 #endif
 
 using namespace Magnum;

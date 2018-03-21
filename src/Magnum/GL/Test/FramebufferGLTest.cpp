@@ -25,32 +25,32 @@
 
 #include <Corrade/TestSuite/Compare/Container.h>
 
-#include "Magnum/Context.h"
-#include "Magnum/CubeMapTexture.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Framebuffer.h"
-#include "Magnum/Image.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/Renderbuffer.h"
-#include "Magnum/RenderbufferFormat.h"
-#include "Magnum/Texture.h"
-#include "Magnum/TextureFormat.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/CubeMapTexture.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Framebuffer.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/Renderbuffer.h"
+#include "Magnum/GL/RenderbufferFormat.h"
+#include "Magnum/GL/Texture.h"
+#include "Magnum/GL/TextureFormat.h"
 #include "Magnum/Math/Color.h"
-#include "Magnum/OpenGLTester.h"
 
 #ifndef MAGNUM_TARGET_GLES2
-#include "Magnum/BufferImage.h"
-#include "Magnum/MultisampleTexture.h"
-#include "Magnum/TextureArray.h"
+#include "Magnum/GL/BufferImage.h"
+#include "Magnum/GL/MultisampleTexture.h"
+#include "Magnum/GL/TextureArray.h"
 #endif
 #if !defined(MAGNUM_TARGET_GLES2) && !defined(MAGNUM_TARGET_WEBGL)
-#include "Magnum/CubeMapTextureArray.h"
+#include "Magnum/GL/CubeMapTextureArray.h"
 #endif
 #ifndef MAGNUM_TARGET_GLES
-#include "Magnum/RectangleTexture.h"
+#include "Magnum/GL/RectangleTexture.h"
 #endif
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct FramebufferGLTest: OpenGLTester {
     explicit FramebufferGLTest();
@@ -1984,6 +1984,6 @@ void FramebufferGLTest::blit() {
     CORRADE_COMPARE(imageAfter.data<Color4ub>()[0], Color4ub(128, 64, 32, 17));
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::FramebufferGLTest)

@@ -26,9 +26,9 @@
 #include <sstream>
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/Sampler.h"
+#include "Magnum/GL/Sampler.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct SamplerTest: TestSuite::Tester {
     explicit SamplerTest();
@@ -105,6 +105,6 @@ void SamplerTest::debugDepthStencilMode() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::SamplerTest)

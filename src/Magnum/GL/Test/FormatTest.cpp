@@ -26,9 +26,9 @@
 #include <sstream>
 #include <Corrade/TestSuite/Tester.h>
 
-#include "Magnum/PixelFormat.h"
+#include "Magnum/GL/PixelFormat.h"
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct FormatTest: TestSuite::Tester {
     explicit FormatTest();
@@ -69,6 +69,6 @@ void FormatTest::debugCompressedPixelFormat() {
     #endif
 }
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::FormatTest)

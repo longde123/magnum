@@ -25,22 +25,22 @@
 
 #include <Corrade/TestSuite/Compare/Container.h>
 
-#include "Magnum/Context.h"
-#include "Magnum/Extensions.h"
-#include "Magnum/Image.h"
-#include "Magnum/OpenGLTester.h"
-#include "Magnum/PixelFormat.h"
-#include "Magnum/Texture.h"
+#include "Magnum/GL/Context.h"
+#include "Magnum/GL/Extensions.h"
+#include "Magnum/GL/Image.h"
+#include "Magnum/GL/OpenGLTester.h"
+#include "Magnum/GL/PixelFormat.h"
+#include "Magnum/GL/Texture.h"
 #ifndef MAGNUM_TARGET_GLES2
-#include "Magnum/TextureArray.h"
+#include "Magnum/GL/TextureArray.h"
 #endif
-#include "Magnum/TextureFormat.h"
+#include "Magnum/GL/TextureFormat.h"
 
 #ifdef MAGNUM_TARGET_GLES
-#include "Magnum/Framebuffer.h"
+#include "Magnum/GL/Framebuffer.h"
 #endif
 
-namespace Magnum { namespace Test {
+namespace Magnum { namespace GL { namespace Test {
 
 struct PixelStorageGLTest: OpenGLTester {
     explicit PixelStorageGLTest();
@@ -455,6 +455,6 @@ void PixelStorageGLTest::packCompressed3D() {
 }
 #endif
 
-}}
+}}}
 
 CORRADE_TEST_MAIN(Magnum::Test::PixelStorageGLTest)

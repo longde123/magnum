@@ -23,8 +23,8 @@
     DEALINGS IN THE SOFTWARE.
 */
 
-#include "Magnum/DefaultFramebuffer.h"
-#include "Magnum/Framebuffer.h"
+#include "Magnum/GL/DefaultFramebuffer.h"
+#include "Magnum/GL/Framebuffer.h"
 #include "Magnum/Platform/Sdl2Application.h"
 
 using namespace Magnum;

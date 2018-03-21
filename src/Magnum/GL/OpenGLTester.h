@@ -26,7 +26,7 @@
 */
 
 /** @file
- * @brief Class @ref Magnum::OpenGLTester
+ * @brief Class @ref Magnum::GL::OpenGLTester
  */
 
 #include <Corrade/TestSuite/Tester.h>
@@ -56,7 +56,7 @@
 #error cannot run OpenGL tests on this platform
 #endif
 
-namespace Magnum {
+namespace Magnum { namespace GL {
 
 /**
 @brief Base class for OpenGL tests and benchmarks
@@ -249,7 +249,7 @@ class OpenGLTester: public TestSuite::Tester {
 };
 
 /** @hideinitializer
-@relatesalso Magnum::OpenGLTester
+@relatesalso Magnum::GL::OpenGLTester
 @brief Verify that no OpenGL error occurred
 
 Equivalent to
@@ -258,6 +258,6 @@ Equivalent to
 */
 #define MAGNUM_VERIFY_NO_ERROR() CORRADE_COMPARE(Magnum::Renderer::error(), Magnum::Renderer::Error::NoError)
 
-}
+}}
 
 #endif

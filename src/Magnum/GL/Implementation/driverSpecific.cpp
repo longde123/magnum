@@ -29,7 +29,7 @@
 #include "Magnum/GL/Extensions.h"
 #include "Magnum/Math/Range.h"
 
-namespace Magnum {
+namespace Magnum { namespace GL {
 
 namespace {
     /* Search the code for the following strings to see where they are implemented. */
@@ -238,4 +238,4 @@ void Context::setupDriverWorkarounds() {
     #undef _setRequiredVersion
 }
 
-}
+}}

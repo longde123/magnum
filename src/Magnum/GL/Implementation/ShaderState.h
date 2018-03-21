@@ -29,7 +29,7 @@
 #include "Magnum/configure.h"
 #include "Magnum/GL/OpenGL.h"
 
-namespace Magnum { namespace Implementation {
+namespace Magnum { namespace GL { namespace Implementation {
 
 struct ShaderState {
     explicit ShaderState():
@@ -88,6 +88,6 @@ struct ShaderState {
     #endif
 };
 
-}}
+}}}
 
 #endif

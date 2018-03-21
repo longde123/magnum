@@ -34,7 +34,7 @@
 #endif
 #include "Magnum/GL/Implementation/maxTextureSize.h"
 
-namespace Magnum {
+namespace Magnum { namespace GL {
 
 namespace {
     template<UnsignedInt> struct VectorOrScalar;
@@ -99,5 +99,5 @@ template class MAGNUM_GL_EXPORT TextureArray<1>;
 #endif
 template class MAGNUM_GL_EXPORT TextureArray<2>;
 
-}
+}}
 #endif

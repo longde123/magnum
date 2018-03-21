@@ -26,12 +26,12 @@
 */
 
 /** @file
- * @brief Enum @ref Magnum::RenderbufferFormat
+ * @brief Enum @ref Magnum::GL::RenderbufferFormat
  */
 
 #include "Magnum/GL/OpenGL.h"
 
-namespace Magnum {
+namespace Magnum { namespace GL {
 
 /**
 @brief Internal renderbuffer format
@@ -633,6 +633,6 @@ enum class RenderbufferFormat: GLenum {
     #endif
 };
 
-}
+}}
 
 #endif

@@ -29,7 +29,7 @@
 #include "Magnum/GL/Extensions.h"
 #include "Magnum/GL/DebugOutput.h"
 
-namespace Magnum {
+namespace Magnum { namespace GL {
 
 OpenGLTester::OpenGLTester(): TestSuite::Tester{TestSuite::Tester::TesterConfiguration{}.setSkippedArgumentPrefixes({"magnum"})}, _windowlessApplication{{arguments().first, arguments().second}} {
     /* Try to create debug context, fallback to normal one if not possible. No
@@ -67,4 +67,4 @@ std::uint64_t OpenGLTester::gpuTimeBenchmarkEnd() {
     return _gpuTimeQuery.result<UnsignedLong>();
 }
 
-}
+}}

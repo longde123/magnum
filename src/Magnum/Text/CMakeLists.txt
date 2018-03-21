@@ -56,6 +56,7 @@ elseif(BUILD_STATIC_PIC)
 endif()
 target_link_libraries(MagnumText PUBLIC
     Magnum
+    MagnumGL
     MagnumTextureTools
     Corrade::PluginManager)
 
